@@ -3,7 +3,7 @@ Uppgift 5 - Formulär
 
 På sidan ska det finnas:
     - Ett formulär som innehåller minst följande:
-        - Två textfält
+        - Två textfält -
         - En radio-input
         - En checkbox-input
         - En submit-knapp som submittar formuläret och skickar användaren till en tack.html
@@ -23,10 +23,38 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Form</title>
 </head>
 
 <body>
+    <form action="tack.html" method="post">
+        <fieldset>
+            <legend>Login:</legend>
+            <!--User name input-->
+            <label for="uname">User Name:</label><br>
+            <input type="text" id="uname" name="uname" value="FunnyGator-1234"></form><br>
+
+            <!--Password input-->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password-input" name="password-input"><br>
+
+            <!--submit knapp-->
+            <button type"submit">Save</button>
+        </fieldset>
+
+        <label for="rating">Rate this login:</label>
+        <label for="rating">1:</label>
+        <input type="radio" id="1" name="rating">
+        <label for="rating">2:</label>
+        <input type="radio" id="2" name="rating">
+        <label for="rating">3:</label>
+        <input type="radio" id="3" name="rating">
+        <label for="rating">4:</label>
+        <input type="radio" id="4" name="rating">
+        <label for="rating">5:</label>
+        <input type="radio" id="5" name="rating">
+
+    </form>
 
 </body>
 
