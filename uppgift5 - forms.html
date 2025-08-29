@@ -4,11 +4,11 @@ Uppgift 5 - Formulär
 På sidan ska det finnas:
     - Ett formulär som innehåller minst följande:
         - Två textfält -
-        - En radio-input
-        - En checkbox-input
-        - En submit-knapp som submittar formuläret och skickar användaren till en tack.html
-        - En select+option input
-        - Tydliga labels för varje input 
+        - En radio-input - 
+        - En checkbox-input -
+        - En submit-knapp som submittar formuläret och skickar användaren till en tack.html- - 
+        - En select+option input -
+        - Tydliga labels för varje input  -
         - Minst 2 delar av formuläret med fieldset
         - En input som redan har data i sig (value-attributet)
 
@@ -29,19 +29,26 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 <body>
     <form action="tack.html" method="post">
         <fieldset>
+        <fieldset>
             <legend>Login:</legend>
             <!--User name input-->
             <label for="uname">User Name:</label><br>
-            <input type="text" id="uname" name="uname" value="FunnyGator-1234"></form><br>
+            <input type="text" id="uname" name="uname" value="FunnyGator-1234"><br>
 
             <!--Password input-->
             <label for="password">Password:</label><br>
             <input type="password" id="password-input" name="password-input"><br>
 
             <!--submit knapp-->
-            <button type"submit">Save</button>
+            <button type="submit">Save</button>
         </fieldset>
+       <br>
 
+       <!--checkbox for user satisfaciton-->
+        <label for="helpful">was this website helpful?:</label>
+        <input type="checkbox" name="subscribe" value="yes"><br>
+
+        <!--rating for this website/login-->
         <label for="rating">Rate this login:</label>
         <label for="rating">1:</label>
         <input type="radio" id="1" name="rating">
@@ -52,9 +59,18 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
         <label for="rating">4:</label>
         <input type="radio" id="4" name="rating">
         <label for="rating">5:</label>
-        <input type="radio" id="5" name="rating">
-
+        <input type="radio" id="5" name="rating"> 
+        <br><br>
+        <label for="server">Choose server.:</label>
+        <select id="server" name="server">
+            <option value="eu">Europe</option>
+            <option value="Af">Africa</option>
+            <option value="Na">Northa america</option>
+            <option value="Sa">South america</option>
+        </select>
+    </fieldset>
     </form>
+    
 
 </body>
 
